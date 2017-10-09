@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pimpl", "Pimpl\Pimpl.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multi_Inheritance", "Multi_Inheritance\Multi_Inheritance.vcxproj", "{F27B032D-67FD-4A7F-B9DD-9E1DA530A166}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enable_Shared_From_This", "Enable_Shared_From_This\Enable_Shared_From_This.vcxproj", "{3EAA1280-1CFE-4E8E-9447-5289B2CED410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{F27B032D-67FD-4A7F-B9DD-9E1DA530A166}.Release|x64.Build.0 = Release|x64
 		{F27B032D-67FD-4A7F-B9DD-9E1DA530A166}.Release|x86.ActiveCfg = Release|Win32
 		{F27B032D-67FD-4A7F-B9DD-9E1DA530A166}.Release|x86.Build.0 = Release|Win32
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Debug|x64.ActiveCfg = Debug|x64
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Debug|x64.Build.0 = Debug|x64
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Debug|x86.ActiveCfg = Debug|Win32
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Debug|x86.Build.0 = Debug|Win32
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x64.ActiveCfg = Release|x64
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x64.Build.0 = Release|x64
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x86.ActiveCfg = Release|Win32
+		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
