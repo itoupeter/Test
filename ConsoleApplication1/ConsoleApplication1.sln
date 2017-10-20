@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multi_Inheritance", "Multi_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enable_Shared_From_This", "Enable_Shared_From_This\Enable_Shared_From_This.vcxproj", "{3EAA1280-1CFE-4E8E-9447-5289B2CED410}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Std_Chrono", "Std_Chrono\Std_Chrono.vcxproj", "{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x64.Build.0 = Release|x64
 		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x86.ActiveCfg = Release|Win32
 		{3EAA1280-1CFE-4E8E-9447-5289B2CED410}.Release|x86.Build.0 = Release|Win32
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Debug|x64.ActiveCfg = Debug|x64
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Debug|x64.Build.0 = Debug|x64
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Debug|x86.Build.0 = Debug|Win32
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Release|x64.ActiveCfg = Release|x64
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Release|x64.Build.0 = Release|x64
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Release|x86.ActiveCfg = Release|Win32
+		{0B0BB0EE-BEBE-4FAA-9E5C-0A76C7D705CE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
