@@ -7,7 +7,7 @@ int main()
 {
     auto begin = std::chrono::high_resolution_clock::now();
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 
     auto end = std::chrono::high_resolution_clock::now();
 
