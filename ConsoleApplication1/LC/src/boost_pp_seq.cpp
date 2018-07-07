@@ -72,3 +72,30 @@ BOOST_AUTO_TEST_CASE(seq_elem_test)
     BOOST_TEST(Apple == 1);
     BOOST_TEST(Banana == 2);
 }
+
+BOOST_AUTO_TEST_CASE(seq_for_each_i_test)
+{
+#define DEFINE_ASSIGNMENT(unused1, unused2, i, elem) \
+    int elem = i; \
+    // DEFINE_ASSIGNMENT
+
+    BOOST_PP_SEQ_FOR_EACH_I(DEFINE_ASSIGNMENT, unused, SEQUENCE)
+#undef DEFINE_ASSIGNMENT
+
+    BOOST_TEST(Apple == 0);
+    BOOST_TEST(Banana == 1);
+}
+
+BOOST_AUTO_TEST_CASE(seq_fold_test)
+{
+#define DEFINE_CAT_OP(unused, state, elem) \
+    BOOST_PP_CAT(state, elem) \
+    // DEFINE_CAT_OP
+
+    int BOOST_PP_SEQ_FOLD_LEFT(DEFINE_CAT_OP, , SEQUENCE) = 1;
+    int BOOST_PP_SEQ_FOLD_RIGHT(DEFINE_CAT_OP, , SEQUENCE) = 2;
+#undef  DEFINE_CAT_OP
+
+    BOOST_TEST(AppleBananaHelloWorld == 1);
+    BOOST_TEST(HelloWorldBananaApple == 2);
+}
