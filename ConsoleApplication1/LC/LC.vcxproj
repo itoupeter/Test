@@ -22,6 +22,7 @@
     <ClCompile Include="src\boost_algorithm.cpp" />
     <ClCompile Include="src\boost_pp_seq.cpp" />
     <ClCompile Include="src\boost_signal2.cpp" />
+    <ClCompile Include="src\enum_specialization.cpp" />
     <ClCompile Include="src\StreamIterator.cpp" />
     <ClCompile Include="src\Test.cpp" />
   </ItemGroup>
