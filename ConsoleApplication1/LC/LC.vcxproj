@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="src\boost_algorithm.cpp" />
     <ClCompile Include="src\boost_pp_seq.cpp" />
+    <ClCompile Include="src\boost_signal2.cpp" />
     <ClCompile Include="src\StreamIterator.cpp" />
     <ClCompile Include="src\Test.cpp" />
   </ItemGroup>
@@ -80,7 +81,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(BOOST_ROOT);inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -116,7 +117,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(BOOST_ROOT);inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
