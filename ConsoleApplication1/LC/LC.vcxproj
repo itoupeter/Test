@@ -23,9 +23,13 @@
     <ClCompile Include="src\boost_pp_seq.cpp" />
     <ClCompile Include="src\boost_signal2.cpp" />
     <ClCompile Include="src\enum_specialization.cpp" />
+    <ClCompile Include="src\google_test.cpp" />
     <ClCompile Include="src\Source.cpp" />
     <ClCompile Include="src\StreamIterator.cpp" />
     <ClCompile Include="src\Test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -131,5 +135,12 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\gmock.1.7.0\build\native\gmock.targets" Condition="Exists('..\packages\gmock.1.7.0\build\native\gmock.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\gmock.1.7.0\build\native\gmock.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\gmock.1.7.0\build\native\gmock.targets'))" />
+  </Target>
 </Project>
