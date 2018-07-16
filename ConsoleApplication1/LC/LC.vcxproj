@@ -24,8 +24,10 @@
     <ClCompile Include="src\boost_signal2.cpp" />
     <ClCompile Include="src\enum_specialization.cpp" />
     <ClCompile Include="src\google_test.cpp" />
+    <ClCompile Include="src\policy.cpp" />
     <ClCompile Include="src\Source.cpp" />
     <ClCompile Include="src\StreamIterator.cpp" />
+    <ClCompile Include="src\template.cpp" />
     <ClCompile Include="src\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
